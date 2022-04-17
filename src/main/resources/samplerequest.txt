@@ -1,0 +1,6 @@
+Example:
+
+http://localhost:8080/coordinates?origin=<ORIGIN_LATITUDE>,{ORIGIN_LONGITUDE}&destination=<DESTINATION_LATITUDE>,{DESTINATION_LONGITUDE}
+
+http://localhost:8080/coordinates?origin=12.954009171852082,77.6179555658499&destination=12.976142075889593,77.5945209490395
+http://localhost:8080/coordinates?origin=Kormangla&destination=Hoodi
