@@ -1,9 +1,9 @@
-#README
+# README
 
 This application is used find nearly equidistant markers on the road for directions between a source and destination.
 Built to be used for tracking progress of any thing that is in-transit on a particular route. 
 
-###1. How to run the code
+### 1. How to run the code
 0. Requirements : Java11, Maven
 1. unzip and cd into folder `map-point-plotter`
 2. (OPTIONAL) following properties can be modified before building and running [application.properties](src/main/resources/application.properties) 
@@ -13,7 +13,7 @@ Built to be used for tracking progress of any thing that is in-transit on a part
 4. `java -jar target/map-point-plotter-0.0.1-SNAPSHOT.jar`
 
    
-###2. Sample request and response.
+### 2. Sample request and response.
 
 1. [samplerequest.txt](src/main/resources/samplerequest.txt) 
 2. [sampleresponse.txt](src/main/resources/sampleresponse.txt) JSON response is returned to the REST call, **however its easier to use plain-text from the console output**
@@ -22,7 +22,7 @@ Built to be used for tracking progress of any thing that is in-transit on a part
 4. ![alt text](src/main/resources/city.png)
    
 
-###3. Explaination of the code structure 
+### 3. Explaination of the code structure 
 
 This is a Springboot application that uses Google Maps Direction API to fetch routes from origin to destination.
 REST Endpoint is exposed to consume the origin and destination which is used to query Google's DirectionAPI and the results are processed to return relavant points across the route.
@@ -46,7 +46,7 @@ The Points on the paths are processed according to the following logic:
     4. Add the Destination Point at the end of all steps
 8. The list is returned as a JSON response 
 
-###Polyline Encoding features:
+### Polyline Encoding features:
 
 There are a few things that make polyline encoding interesting. 
 The following is an output of the points that are encoded in the polyline for this route. We can draw two conclusions from this example:
